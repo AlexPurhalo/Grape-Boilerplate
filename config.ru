@@ -5,6 +5,7 @@ require 'grape'
 require 'sequel'
 require 'rest-client'
 require 'rack/cors'
+require 'sequel/extensions/seed'
 
 DB = Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://db/database.db')
 
